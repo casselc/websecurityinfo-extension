@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="popup.css"/>
+    <title>Request Security</title>
+  </head>
+
+
+  <body>
+    <form name="clear_history">
+      <fieldset>
+        <legend>Clear Request History</legend>
+        <label>
+          <input type="radio" name="delete_what" value="all">
+          Delete all
+        </label>
+        <label>
+          <input type="radio" name="delete_what" value="keep_n">
+          Keep Last
+          <input name="keep_last_n" type="number" value="100">
+          items
+        </label>
+        <label>
+          <input type="radio" name="delete_what" value="keep_days">
+          Keep Last
+          <input name="keep_last_days" type="number" value="7">
+          days
+        </label>
+        
+      </fieldset>
+      <button id="clear_history" type="button">Delete</button>
+    </form>
+    <h3>Requests</h3>
+    <ul id="requests">
+      <li>No data collected yet...</li>
+    </ul>
+    <ul id="errors">
+    </ul>
+    <script src="popup.js"></script>
+  </body>
+
+</html>

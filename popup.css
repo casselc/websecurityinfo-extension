@@ -1,0 +1,20 @@
+ul#requests {
+    width: 100%;
+    list-style-type: none;
+}
+
+ul#requests > li {
+    margin-bottom: 0.5rem;
+}
+
+ul#requests > li > details > summary {
+    padding: 0.25rem;
+}
+
+ul#requests > li:nth-of-type(odd) > details > summary {
+    background-color: whitesmoke;
+}
+
+ul#requests > li:nth-of-type(even) > details > summary {
+    background-color: lightgray;
+}
